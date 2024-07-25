@@ -1,12 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Pricing from "./components/Pricing";
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="text-center">
-        <h1 className="text-3xl">Your Blank Canvas</h1>
-        <p>Chat with the agent to start making edits.</p>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <Pricing />
+        <AboutUs />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
